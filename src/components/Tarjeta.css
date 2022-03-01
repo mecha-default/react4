@@ -1,0 +1,22 @@
+.tarjeta {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: lightblue
+  }
+  
+  .card-primary {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: lightblue
+  }
+  .card-secondary {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: lightyellow
+  }
