@@ -427,33 +427,47 @@ const producto2 = {
 const App = () => {
 
 
-  return (
-    <div>
+  // return (
+  //   <div>
 
-     <h1>Hola</h1>
+  //    <h1>Hola</h1>
 
-     <Tarjeta 
-        title={producto.title}
-        price={producto.price}
-        thumbnail={producto.thumbnail}
-        shipping={producto.free_shipping}
-        condition={producto.condition}
-        color="card-primary"
-        discount={producto.discount}
+  //    <Tarjeta 
+  //       title={producto.title}
+  //       price={producto.price}
+  //       thumbnail={producto.thumbnail}
+  //       shipping={producto.free_shipping}
+  //       condition={producto.condition}
+  //       color="card-primary"
+  //       discount={producto.discount}
 
-     />
+  //    />
 
-      <Tarjeta 
-        title={producto2.title}
-        price={producto2.price}
-        thumbnail={producto2.thumbnail}
-        shipping={producto2.free_shipping}
-        condition={producto2.condition}
+  //     <Tarjeta 
+  //       title={producto2.title}
+  //       price={producto2.price}
+  //       thumbnail={producto2.thumbnail}
+  //       shipping={producto2.free_shipping}
+  //       condition={producto2.condition}
+  //       color="card-secondary"
+  //       discount={producto2.discount}
+  //    />
+  //   </div>
+  // );
+
+  {productos.map(prod) => { <Tarjeta 
+        title={prod.title}
+        price={prod.price}
+        thumbnail={prod.thumbnail}
+        shipping={prod.free_shipping}
+        condition={prod.condition}
         color="card-secondary"
-        discount={producto2.discount}
+        discount={prod.discount}
      />
-    </div>
-  );
+
+  }
+  
+  } 
 }
 
 export default App;
